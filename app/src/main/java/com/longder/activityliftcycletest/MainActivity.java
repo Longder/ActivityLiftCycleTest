@@ -34,9 +34,13 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
-        Toast toast = Toast.makeText(this,"大家好",Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, "大家好", Toast.LENGTH_SHORT);
+        toast.show();
     }
 
+    /**
+     * 以下几个方法能完整展现生命周期
+     */
     @Override
     protected void onStart() {
         super.onStart();
